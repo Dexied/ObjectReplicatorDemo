@@ -3,112 +3,17 @@ Using bundled DotNet SDK version: 10.0 win-x64
 Starting AutomationTool...
 Parsing command line: BuildPlugin -Plugin=B:\Projects\ObjectReplicatorDemo\Plugins\ObjectReplicator\ObjectReplicator.uplugin -Package=B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator -Rocket -2019
 Initializing script modules...
-Total script module initialization time: 0.17 s.
+Total script module initialization time: 0.59 s.
 Using B:\VisualStudio\Community\MSBuild\Current\Bin\MSBuild.exe
 Executing commands...
-Copying 56 file(s) using max 64 thread(s)
+Copying 124 file(s) using max 64 thread(s)
 Reading plugin from B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Plugins\ObjectReplicator\ObjectReplicator.uplugin...
 Building plugin for host platforms: Win64
 Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealEditor Win64 Development -Project="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\HostProject.uproject" -plugin="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Plugins\ObjectReplicator\ObjectReplicator.uplugin" -noubtmakefiles -manifest="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt"
 Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealEditor-Win64-Development.txt
 Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
   Executing up to 8 processes, one per physical core
+UbaStorageServer - Previous run was not gracefully shutdown. Reparsing cas directory C:\ProgramData\Epic\UnrealBuildAccelerator\cas\ to check for added/missing/corrupt files (Saved 2026-07-27 14:38:22)
+UbaStorageServer - Validated storage (size 0b) in <1ms
 UbaServer - Listening on 0.0.0.0:1345
 Creating makefile for UnrealEditor (no existing makefile)
-UHT compiled-in object format Default
-Writing manifest to B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealEditor-Win64-Development.xml
-Building UnrealEditor...
-===== Toolchain Information =====
-Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
-  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
-Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[Adaptive Build] Excluded from ObjectReplicator unity file: ObjectReplicator.cpp, ReplicatedObject.cpp, ReplicatedObjectContainer.cpp
-=================================
-Using Unreal Build Accelerator local executor to run 9 action(s)
-  CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 25.27 GB/67.91 GB committed
-  UBA Storage capacity 40 GB
-[1/9] Compile Resource [x64] Default.rc2
-[2/9] Compile [x64] SharedPCH.UnrealEd.Cpp20.cpp
-[3/9] Compile [x64] ObjectReplicator.cpp
-[4/9] Compile [x64] ReplicatedObject.cpp
-[5/9] Compile [x64] Module.ObjectReplicator.cpp
-[6/9] Compile [x64] ReplicatedObjectContainer.cpp
-[7/9] Link [x64] UnrealEditor-ObjectReplicator.lib
-[8/9] Link [x64] UnrealEditor-ObjectReplicator.dll
-[9/9] WriteMetadata UnrealEditor.target [NoUba]
-
-Total time in Unreal Build Accelerator local executor: 37.69 seconds
-Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
-
-Result: Succeeded
-Total execution time: 45.92 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 9.9kb
-Took 46,35s to run dotnet.exe, ExitCode=0
-Building plugin for target platforms: Win64
-Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Development -Project="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\HostProject.uproject" -plugin="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Plugins\ObjectReplicator\ObjectReplicator.uplugin" -noubtmakefiles -manifest="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt"
-Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Development.txt
-Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
-  Executing up to 8 processes, one per physical core
-UbaServer - Listening on 0.0.0.0:1345
-Creating makefile for UnrealGame (no existing makefile)
-UHT compiled-in object format Default
-Writing manifest to B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealGame-Win64-Development.xml
-Building UnrealGame...
-===== Toolchain Information =====
-Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
-  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
-Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[Adaptive Build] Excluded from ObjectReplicator unity file: ObjectReplicator.cpp, ReplicatedObject.cpp, ReplicatedObjectContainer.cpp
-=================================
-Using Unreal Build Accelerator local executor to run 4 action(s)
-  CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 22.46 GB/67.91 GB committed
-  UBA Storage capacity 40 GB
-[1/4] Compile [x64] ObjectReplicator.cpp
-[2/4] Compile [x64] Module.ObjectReplicator.cpp
-[3/4] Compile [x64] ReplicatedObject.cpp
-[4/4] Compile [x64] ReplicatedObjectContainer.cpp
-
-Total time in Unreal Build Accelerator local executor: 6.61 seconds
-Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame.exe
-
-Result: Succeeded
-Total execution time: 9.54 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.8kb
-Took 9,73s to run dotnet.exe, ExitCode=0
-Running: B:\UnrealEngine\UE_5.8\Engine\Binaries\ThirdParty\DotNet\10.0\win-x64\dotnet.exe "B:\UnrealEngine\UE_5.8\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" UnrealGame Win64 Shipping -Project="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\HostProject.uproject" -plugin="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Plugins\ObjectReplicator\ObjectReplicator.uplugin" -noubtmakefiles -manifest="B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml" -nohotreload -log="C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt"
-Log file: C:\Users\dexie\AppData\Roaming\Unreal Engine\AutomationTool\Logs\B+UnrealEngine+UE_5.8\UBA-UnrealGame-Win64-Shipping.txt
-Determining max actions to execute in parallel (8 physical cores, 16 logical cores)
-  Executing up to 8 processes, one per physical core
-UbaServer - Listening on 0.0.0.0:1345
-Creating makefile for UnrealGame (no existing makefile)
-Writing manifest to B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Saved\Manifest-UnrealGame-Win64-Shipping.xml
-Building UnrealGame...
-===== Toolchain Information =====
-Using ISPC compiler (B:\UnrealEngine\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
-  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2)
-Using Visual Studio 14.44.35228 toolchain (B:\VisualStudio\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[Adaptive Build] Excluded from ObjectReplicator unity file: ObjectReplicator.cpp, ReplicatedObject.cpp, ReplicatedObjectContainer.cpp
-=================================
-Using Unreal Build Accelerator local executor to run 4 action(s)
-  CPU 8 physical cores, 16 logical cores
-  Memory 63.91 GB physical, 23.32 GB/67.91 GB committed
-  UBA Storage capacity 40 GB
-[1/4] Compile [x64] ObjectReplicator.cpp
-[2/4] Compile [x64] Module.ObjectReplicator.cpp
-[3/4] Compile [x64] ReplicatedObject.cpp
-[4/4] Compile [x64] ReplicatedObjectContainer.cpp
-
-Total time in Unreal Build Accelerator local executor: 5.65 seconds
-Output binary: B:\UnrealEngine\UE_5.8\Engine\Binaries\Win64\UnrealGame-Win64-Shipping.exe
-
-Result: Succeeded
-Total execution time: 7.28 seconds
-Trace written to file C:\Users\dexie\AppData\Local\UnrealBuildTool\Trace.uba with size 5.7kb
-Took 7,45s to run dotnet.exe, ExitCode=0
-Reading filter rules from B:\Projects\ObjectReplicatorDemo\Builds\ObjectReplicator\HostProject\Plugins\ObjectReplicator\Config\FilterPlugin.ini
-Loading FilterPluginWin64.ini
-BUILD SUCCESSFUL
-AutomationTool executed for 0h 1m 4s
-AutomationTool exiting with ExitCode=0 (Success)
